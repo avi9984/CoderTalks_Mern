@@ -1,0 +1,36 @@
+.arrow {
+    height: 20px;
+    /* display: flex; */
+    align-items: center;
+
+
+}
+
+.btn {
+    /* display: flex; */
+    align-items: center;
+    margin: auto;
+    /* width: 90px; */
+    gap: 10px;
+}
+
+.inner_box {
+    display: flex;
+    align-items: center;
+    grid-gap: 5px;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    background: rgb(54, 54, 197);
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.inner_box:hover {
+    background: #014a9c;
+}
