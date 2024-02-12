@@ -5,16 +5,17 @@ import Card from '../../components/shared/Card/Card'
 import Button from '../../components/shared/Button/Button'
 
 const Home = () => {
-    const signInLinkStyle = {
-        // color: '#fff',
-        fontWeight: 'bold',
-        textDecoration: 'none',
-        marginLeft: '10px'
-    };
+    // const signInLinkStyle = {
+    //     // color: '#fff',
+    //     fontWeight: 'bold',
+    //     textDecoration: 'none',
+    //     marginLeft: '10px'
+    // };
     const navigate = useNavigate();
     function startRegister() {
-        navigate('/register')
-        console.log("clicked...");
+        console.log('Clicked on "Let\'s Go" button');
+        navigate('/authenticate')
+        console.log('Navigating to /authenticate');
     }
     return (
         <div className={styles.cardwrapper}>
@@ -23,11 +24,11 @@ const Home = () => {
                     We're working hard to get CoderTalks ready for everyone! While we wrap up the finishing youches, we're adding people gradially to make sure nothing breaks.
                 </p>
                 <div className={styles.name_box}>
-                    <Button className={styles.inner_box} onClick={startRegister} children="Get your username" />
+                    <Button className={styles.inner_box} onClick={startRegister} children="Let's Go" />
                 </div>
                 <div>
                     <span>Have an invite text?</span>
-                    <Link style={signInLinkStyle} to="/login"> Sign in</Link>
+                    {/* <Link style={signInLinkStyle} to="/login"> Sign in</Link> */}
                 </div>
             </Card>
         </div>

@@ -17,7 +17,7 @@ const Authenticate = () => {
     }
     return (
         <div>
-            <h1>Myaur</h1>
+            <h1>Avi</h1>
             <Step onNext={onNext} />
         </div>
     )
